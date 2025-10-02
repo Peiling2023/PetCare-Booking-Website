@@ -1,37 +1,36 @@
-# 🐾 PetCare Cats Website
+# 🐾 PetCare-Booking-Site
 
 ## 📖 Overview
-**PetCare Cats Website** is a fully responsive **multi-page static website** built with **HTML5, CSS3, and Vanilla JavaScript**.  
-It was developed to practice **semantic HTML, accessibility, responsive design, and client-side interactivity**.  
+PetCare-Booking-Site is a **multi-page static website** built with **HTML5 and CSS3**.  
+It was developed as an **early project for practicing responsive web design and semantic HTML structure**.  
 
-This project simulates a **pet care platform for cats**, featuring service descriptions, subscription forms, privacy policy, and engaging UI elements.
+The site simulates a **pet care booking platform**, allowing users to view services, privacy policies, contact information, and register for appointments.
 
 ---
 
 ## ✨ Features
-- ✅ Multi-page navigation (Home, Cats, Privacy)  
-- ✅ Responsive layout with CSS Grid & Flexbox  
-- ✅ Accessible design (semantic HTML, skip links, ARIA attributes, keyboard navigation)  
-- ✅ Interactive **hamburger menu** with JavaScript  
-- ✅ Modal **Subscribe form** with real-time validation (email & confirm email):contentReference[oaicite:0]{index=0}  
-- ✅ WCAG-compliant color contrast & reduced motion support:contentReference[oaicite:1]{index=1}  
-- ✅ Smooth animations & hover effects  
+- ✅ Multi-page navigation (Home, Services, About, Contact, Privacy, Register)  
+- ✅ Responsive layout with adaptive breakpoints (desktop & mobile)  
+- ✅ Accessible HTML (semantic tags, labels, alt text)  
+- ✅ Styled with CSS (custom palette, layout, typography)  
+- ✅ Registration form with input validation (required fields, email format)  
 
 ---
 
 ## 🛠 Tech Stack
 - **HTML5** – Structure & semantics  
-- **CSS3** – Responsive styling, Flexbox, Grid, media queries  
-- **Vanilla JavaScript** – Form validation, modal dialog, navigation toggle:contentReference[oaicite:2]{index=2}  
+- **CSS3** – Responsive styling, layout system  
+- **Vanilla JS (optional)** – Form validation (if included)  
 
 ---
 
 ## 📂 Project Structure
 ```bash
-petcare-cats-site/
-├── index.html       # Homepage
-├── cats.html        # Cats page (subscription form + modal)
-├── privacy.html     # Privacy policy
-├── styles.css       # Main stylesheet
-├── scripts.js       # Menu toggle, modal & form validation
-└── README.md        # Documentation
+project-root/
+├── index.html        # Homepage
+├── about.html        # About page
+├── services.html     # Services page
+├── contact.html      # Contact page
+├── privacy.html      # Privacy policy
+├── register.html     # Registration form
+└── styles.css        # Main stylesheet
