@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCarePets - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <a href="index.html">
+                <img src="img/icarepets_logo.png" alt="iCarePets Logo" class="logo">
+            </a>
+            <h1>iCarePets for Dog Service</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a href="#">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="external-links">
+                    <a href="#">External Links</a>
+                    <ul class="dropdown">
+                        <li><a href="https://www.xiaohongshu.com/user/profile/645b55cc000000001f033d0e" target="_blank">Diaries</a></li>
+                        <li><a href="https://www.instagram.com/dog/" target="_blank">Dog Instagram</a></li>
+                        <li><a href="https://www.sanjoseca.gov/your-government/departments-offices/animal-care-services/services/pet-adoption/adopt-a-dog" target="_blank">Adopt a Dog</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Register</h2>
+            <!-- 小字解释 * 号为必填项 -->
+            <form>
+                <p class="form-description"><span class="required">*</span> Required fields. Please fill out all required fields to submit the form.</p>
+
+        <form action="/register" method="POST">
+            <!-- Name -->
+            <label for="name">Name: <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email: <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Preferred Service (Required Checkbox Group) -->
+            <label for="service">Preferred Service: <span class="required">*</span></label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="service" value="dog-walking-feeding"> 
+                    <span>Dog Walking and Feeding</span>
+                </label>
+                <label><input type="checkbox" name="service" value="dog-boarding"> Dog Boarding</label>
+                <label><input type="checkbox" name="service" value="dog-grooming"> Dog Grooming</label>
+                <label><input type="checkbox" name="service" value="dog-social-activities"> Dog Social Activities</label>
+                <label><input type="checkbox" name="service" value="dog-daycare"> Dog Daycare</label>
+                <label><input type="checkbox" name="service" value="undecided"> Haven't Decided Yet</label>
+            </div>
+
+            <!-- Dog Ownership Radio -->
+            <label for="dog-ownership">Do you currently have a dog?: <span class="required">*</span></label>
+            <div class="radio-group">
+                <label><input type="radio" name="dog-ownership" value="yes"> Yes, I have a dog</label>
+                <label><input type="radio" name="dog-ownership" value="yes"> Yes, But the dog is from my famliy or friend.</label>
+                <label><input type="radio" name="dog-ownership" value="no"> No, but planning to have one</label>
+            </div>
+
+            <!-- 提示无狗狗则信息为选填 -->
+    
+            <p class="note">If you don't have a dog, you can skip the dog details below, except * required ones.</p>
+            
+            <!-- Dog's Name (Optional Field) -->
+            <label for="dog-name">Dog's Name: </label>
+            <input type="text" id="dog-name" name="dog-name">
+
+            <!-- Dog Breed (Optional Field) -->
+            <label for="breed">Breed: </label>
+            <input type="text" id="breed" name="breed">
+
+            <!-- Dog Gender (Required Dropdown) -->
+            <label for="gender">Dog's Gender: <span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Please select</option>
+                <option value="no-dog">No Dog</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <!-- Dog Age (Optional Field) -->
+            <label for="age">Dog's Age: </label>
+            <input type="text" id="age" name="age">
+
+            <!-- Dog Neutered/Spayed Status (Required Dropdown) -->
+            <label for="neutered">Is your dog neutered/spayed? <span class="required">*</span></label>
+            <select id="neutered" name="neutered" required>
+                <option value="" disabled selected>Please select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="no-dog">No Dog</option>
+            </select>
+
+            <!-- Dog Vaccination Status (Required Dropdown) -->
+            <label for="vaccinated">Is your dog vaccinated? <span class="required">*</span></label>
+            <select id="vaccinated" name="vaccinated" required>
+                <option value="" disabled selected>Please select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="no-dog">No Dog</option>
+            </select>
+
+            <!-- Subscribe to Emails Checkbox -->
+            <div id="subscribe-container">
+                <label> Do you want us to send you emails? <span class="required">*</span></label>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+                    <label for="subscribe">Subscribe emails to our dog activities and news!</label>
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+        <p>&copy; 2024 iCarePets. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

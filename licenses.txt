@@ -1,0 +1,16 @@
+# Images sourced from unsplash.com:
+
+1. "Dog Movies" (dog-movies.jpg)
+   URL: https://unsplash.com/photos/dog-holding-flower-2s6ORaJY6gI
+
+2. "Dog News" (dog-news.jpg)
+   URL: https://unsplash.com/photos/dog-sitting-in-front-of-book-Zqy-x7K5Qcg
+
+# All other images are owned and photographed by the website owner, Peiling, with the following filenames:
+
+1. icarepets_logo.png
+2. dog-boarding.jpg
+3. dog-feeding.jpg
+4. grooming-tips.jpg
+5. dog-care-tips.jpg
+6. pet-diaries.jpg
