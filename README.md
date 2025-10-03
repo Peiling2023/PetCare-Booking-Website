@@ -26,7 +26,7 @@ The site simulates a **pet care booking platform**, allowing users to view servi
 
 ## 📂 Project Structure
 ```bash
-project-root/
+project1/
 ├── index.html        # Homepage
 ├── about.html        # About page
 ├── services.html     # Services page
